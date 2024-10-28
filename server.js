@@ -12,7 +12,7 @@ var broker = new WebSocket.Server({port: 8000});
 broker.on('connection', (client) => {
     console.log('New client connected.');
   
-    // Define what to do with each client
+    
     client.on('message', (message) => {
         const parsedMessage = JSON.parse(message);
           console.log("NOW PRINTING PARSED MESSAGE: ", parsedMessage);
